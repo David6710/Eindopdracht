@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> contactformulier</title>
+</head>
+
+<body>
+    <h2>Laat hier je commentaar achter!</h2>
+    <form name="receptformulier" method="POST" data-netlify="true">
+        <p>
+            <label>naam: <br>
+                <input type="text" name="name" /></label>
+        </p>
+        <p>
+            <label>email: <br>
+                <input type="email" name="email" /></label>
+        </p>
+
+        <p>
+            <label>leeftijd: <br>
+                <input type="number" min="0" max="100" name="leeftijd" /></label>
+        </p>
+
+        <p>
+            <label>gender: <br>
+                male<input type="radio" name="male" />female<input type="radio" name="female" /></label>
+        </p>
+
+        <p>
+            <label>Bericht<br>
+                <textarea rows="10" cols="50" name="message"></textarea></label>
+        </p>
+
+        <p>
+            <button type="reset">reset</button>
+            <button type="submit">Send</button>
+        </p>
+    </form>
+</body>
+
+</html>
